@@ -1,9 +1,5 @@
-{{
-    config(
-        materialized='table',
-        transient = false
-    )
-}}
+{{ config(materialized="table", transient=false) }}
 
 
-select * from {{ source('jaffle_shop', 'customers') }}
+select *
+from {{ source("jaffle_shop", "customers") }}
