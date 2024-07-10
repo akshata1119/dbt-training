@@ -5,4 +5,4 @@
     )
 }}
 
-select * from {{ source('jaffle_shop', 'orders') }}
+SELECT * FROM {{ source('stripe', 'payment') }}
