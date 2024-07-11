@@ -7,6 +7,6 @@
             updated_at='updated_at'
         )
     }}
-
+    
     select * from {{ source('stripe', 'customer_address') }}
  {% endsnapshot %}
